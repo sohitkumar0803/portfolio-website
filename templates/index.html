@@ -6,21 +6,18 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sohit Mahato</title>
-    <link href="https://fonts.googleapis.com/css2?family=Merriweather&family=Montserrat&family=Sacramento&display=swap"
-        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather&family=Montserrat&family=Sacramento&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="{{url_for('static', filename='css/styles.css')}}">
     <link rel="icon" href="{{url_for('static', filename='assets/man-icon.ico')}}">
-    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> -->
 </head>
 
 <body>
     <div class="nav-bar">
         <nav>
-
-            <ul>
+            
+            <ul class="nav-menu">
                 <a class="nav-brand" href="/">
-                    <img src="{{url_for('static', filename='assets/img/tech2.png')}}" alt="Logo" width="50px"
-                        height="50px">
+                    <img src="{{url_for('static', filename='assets/img/tech2.png')}}" alt="Logo" width="50px" height="50px">
                 </a>
                 <li><a href="#home">Home</a></li>
                 <li><a href="#projects">Projects</a></li>
@@ -28,8 +25,15 @@
                 <li><a href="#contact">Contact Me</a></li>
                 <li><a href="#contact">Resume</a></li>
             </ul>
+            <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
         </nav>
     </div>
+
+
     <div class="container1" id="home">
         <img class="top-cloud" src="{{url_for('static', filename='assets/img/cloud-white.png')}}" alt="cloud-img">
         <h1 style="display: inline-block;">I'am Sohit.</h1>
@@ -111,8 +115,9 @@
                 <img src="{{url_for('static', filename='assets/img/project-4.png')}}" alt="">
                 <div class="caption">
                     <p>T20 World Cup Best 11 Analysis</p>
-                    <a class="btn" href="https://github.com/sohitkumar0803/Data-Analysis-Projects/tree/main/04.%20PowerBI-T20WorldCup2022-Best11-Analysis" target="_blank">Visit <i
-                        class="fa-solid fa-angle-right"></i></a>
+                    <a class="btn"
+                        href="https://github.com/sohitkumar0803/Data-Analysis-Projects/tree/main/04.%20PowerBI-T20WorldCup2022-Best11-Analysis"
+                        target="_blank">Visit <i class="fa-solid fa-angle-right"></i></a>
                 </div>
                 <div class="overlay">
                 </div>
@@ -122,8 +127,9 @@
                 <img src="{{url_for('static', filename='assets/img/project-5.png')}}" alt="">
                 <div class="caption">
                     <p>Sales Dashboard</p>
-                    <a class="btn" href="https://github.com/sohitkumar0803/Data-Analysis-Projects/tree/main/05.%20Tableau-Sales-Dashboard" target="_blank">Visit <i
-                            class="fa-solid fa-angle-right"></i></a>
+                    <a class="btn"
+                        href="https://github.com/sohitkumar0803/Data-Analysis-Projects/tree/main/05.%20Tableau-Sales-Dashboard"
+                        target="_blank">Visit <i class="fa-solid fa-angle-right"></i></a>
                 </div>
                 <div class="overlay">
                 </div>
@@ -132,8 +138,9 @@
                 <img src="{{url_for('static', filename='assets/img/project-6.png')}}" alt="">
                 <div class="caption">
                     <p>Sales Insight Project</p>
-                    <a class="btn" href="https://github.com/sohitkumar0803/Data-Analysis-Projects/tree/main/06.%20PowerBI-Sales-Insight-Project" target="_blank">Visit <i
-                            class="fa-solid fa-angle-right"></i></a>
+                    <a class="btn"
+                        href="https://github.com/sohitkumar0803/Data-Analysis-Projects/tree/main/06.%20PowerBI-Sales-Insight-Project"
+                        target="_blank">Visit <i class="fa-solid fa-angle-right"></i></a>
                 </div>
                 <div class="overlay">
                 </div>
@@ -142,8 +149,9 @@
                 <img src="{{url_for('static', filename='assets/img/project-1.png')}}" alt="">
                 <div class="caption">
                     <p>E-commerce Sales Dashboard</p>
-                    <a class="btn" href="https://github.com/sohitkumar0803/Data-Analysis-Projects/tree/main/01.%20PowerBI-ECommerce-Sales-Dashboard" target="_blank">Visit <i
-                            class="fa-solid fa-angle-right"></i></a>
+                    <a class="btn"
+                        href="https://github.com/sohitkumar0803/Data-Analysis-Projects/tree/main/01.%20PowerBI-ECommerce-Sales-Dashboard"
+                        target="_blank">Visit <i class="fa-solid fa-angle-right"></i></a>
                 </div>
                 <div class="overlay">
                 </div>
@@ -152,8 +160,9 @@
                 <img src="{{url_for('static', filename='assets/img/project-2.png')}}" alt="">
                 <div class="caption">
                     <p>Data Professional Survey Analysis</p>
-                    <a class="btn" href="https://github.com/sohitkumar0803/Data-Analysis-Projects/tree/main/02.%20PowerBI-Data-Professional-Survey-Analysis" target="_blank">Visit <i
-                            class="fa-solid fa-angle-right"></i></a>
+                    <a class="btn"
+                        href="https://github.com/sohitkumar0803/Data-Analysis-Projects/tree/main/02.%20PowerBI-Data-Professional-Survey-Analysis"
+                        target="_blank">Visit <i class="fa-solid fa-angle-right"></i></a>
                 </div>
                 <div class="overlay">
                 </div>
@@ -162,8 +171,9 @@
                 <img src="{{url_for('static', filename='assets/img/project-3.png')}}" alt="">
                 <div class="caption">
                     <p>AirBnB Data Analysis</p>
-                    <a class="btn" href="https://github.com/sohitkumar0803/Data-Analysis-Projects/tree/main/03.%20Tableau-AirBnB-Data-Analysis-Project" target="_blank">Visit <i
-                            class="fa-solid fa-angle-right"></i></a>
+                    <a class="btn"
+                        href="https://github.com/sohitkumar0803/Data-Analysis-Projects/tree/main/03.%20Tableau-AirBnB-Data-Analysis-Project"
+                        target="_blank">Visit <i class="fa-solid fa-angle-right"></i></a>
                 </div>
                 <div class="overlay">
                 </div>
@@ -175,26 +185,28 @@
     <hr>
     <div class="container4" id="contact">
         <h2>Get In Touch</h2>
-        <img class="contact-img" src="{{url_for('static', filename='assets/img/contact-mail.png')}}" alt="Contact Image">
+        <img class="contact-img" src="{{url_for('static', filename='assets/img/contact-mail.png')}}"
+            alt="Contact Image">
         <h3>Let's Connect!</h3>
-        <p class="contact-message">Whether you have a question, want to collaborate on a project, or just want to say hi, feel free to reach out. I'll get back to you as soon as possible!</p>
+        <p class="contact-message">Whether you have a question, want to collaborate on a project, or just want to say
+            hi, feel free to reach out. I'll get back to you as soon as possible!</p>
         <form action="/submit_form" method="post">
             <label for="name">Name</label>
             <input type="text" id="name" name="name" required>
-    
+
             <label for="email">Email</label>
             <input type="email" id="email" name="email" required>
-    
+
             <label for="subject">Subject</label>
             <input type="text" id="subject" name="subject" required>
-    
+
             <label for="message">Message</label>
             <textarea id="message" name="message" rows="5" required></textarea>
-    
+
             <button type="submit">Send Message</button>
         </form>
     </div>
-    
+
     <hr>
 
     <div class="container5" id="footer">
@@ -206,11 +218,13 @@
                 <i class="fa-brands fa-github"></i>Github
             </a>
         </div>
-        
+
         <p class="copyright">&copy; 2024 Sohit Kumar Mahato.</p>
         <p class="copyright">Thanks for visiting...</p>
     </div>
+    <script src="{{url_for('static', filename='js/scripts.js')}}"></script>
     <script src="https://kit.fontawesome.com/872d074bc0.js" crossorigin="anonymous"></script>
+
 </body>
 
 </html>
