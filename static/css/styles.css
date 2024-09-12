@@ -1,0 +1,371 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto+Condensed:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #EEEEEE;
+    color: #40514E;
+    text-align: center;
+    /* font-family: 'Poppins', sans-serif; */
+    font-family: 'Roboto Condensed', sans-serif;
+    /* font-family: 'Merriweather', serif; */
+}
+
+/* .nav-bar {
+    border: 2px solid black;
+} */
+
+.nav-bar ul {
+    display: flex;
+    align-items: center;
+    font-weight: 1000;
+    list-style: none;
+    /* overflow: hidden; */
+    z-index: 1;
+    /* border: 2px solid red; */
+}
+
+.nav-brand h3 {
+    color: #00ADB5;
+    font-size: 1.6rem;
+    /* border: 2px solid black; */
+}
+
+.nav-bar ul li {
+    font-size: 1.1rem;
+    /* border: 2px solid black; */
+}
+
+.nav-bar ul li a {
+    color: #00ADB5;
+    padding: 10px 16px;
+    text-decoration: none;
+    /* border: 2px solid black; */
+    border-radius: 10px;
+}
+
+.nav-bar ul li a:hover {
+    border-radius: 10px;
+    color: #e4f9f5;
+    background-color: black;
+}
+
+
+span {
+    text-decoration: underline;
+}
+
+
+
+h1 {
+    margin: 50px auto 0 auto;
+    font-size: 4.5rem;
+    font-family: 'Sacramento', cursive;
+    color: #00ADB5;
+}
+
+
+h2 {
+    font-size: 1.5rem;
+    font-weight: normal;
+    font-family: 'Montserrat', sans-serif;
+    color: #00ADB5;
+    padding-bottom: 10px;
+}
+
+h3 {
+    font-family: 'Montserrat', sans-serif;
+    color: #00ADB5;
+}
+
+p {
+    line-height: 2;
+    display: inline-block;
+}
+
+hr {
+    border-style: dotted none none none;
+    border-width: 6px;
+    width: 5%;
+    border-color: #00ADB5;
+    margin: 70px auto 70px auto;
+}
+
+a {
+    color: #00ADB5;
+    font-family: 'Montserrat', sans-serif;
+    margin: 20px;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #EAF6F6;
+}
+
+
+/* container1 */
+
+.container1 h1 {
+    color: #00ADB5;
+}
+
+.container1 h2 {
+    color: #00ADB5;
+}
+
+.mountain {
+    width: 100%;
+    height: auto;
+    position: relative;
+    bottom: 40px;
+    z-index: -1;
+    /* border: 2px solid black; */
+}
+
+.top-cloud {
+    width: 10%;
+    position: absolute;
+    z-index: -2;
+    right: 325px;
+    top: 200px;
+}
+
+.bottom-cloud {
+    width: 10%;
+    position: absolute;
+    z-index: -2;
+    left: 365px;
+    top: 400px;
+}
+
+/* container2 */
+
+.container2 {
+    margin: 70px 0;
+}
+
+.intro {
+    margin: auto;
+    width: 30%;
+}
+
+.profile-img {
+    width: 15%;
+    /* border-radius: 100%; */
+    /* border-style: solid; */
+}
+
+.skill-row {
+    margin: 100px auto 100px auto;
+    width: 55%;
+    text-align: left;
+}
+
+.left-img {
+    width: 30%;
+    float: left;
+    margin-right: 30px;
+}
+
+.right-img {
+    width: 30%;
+    float: right;
+    margin-left: 30px;
+}
+
+/* container3 */
+
+.container3 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* border: 2px solid black; */
+}
+
+.cards {
+    margin: 20px;
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    width: 95%;
+    /* border: 2px solid red; */
+}
+
+.card {
+    position: relative;
+    margin: 20px;
+    /* border: 2px solid black; */
+    /* border-radius: 12px; */
+}
+
+.card img {
+    width: 350px;
+    height: 100%;
+    border: 2px solid black;
+    border-radius: 12px;
+}
+
+.overlay {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    border-radius: 12px;
+    transition: .45s ease-in-out;
+    background-color: #141c3a;
+    /* border: 2px solid red; */
+}
+
+.caption {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #ffffff;
+    opacity: 0;
+    border-radius: 12px;
+    transition: .45s ease-in-out;
+    z-index: 1;
+}
+
+.caption p {
+    width: 95%;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.1rem;
+    font-weight: bold;
+    /* border: 2px solid white; */
+}
+
+.caption .btn {
+    width: 50%;
+    background: transparent;
+    border: 2px solid #6E07F3;
+    border-radius: 1000px;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.2rem;
+    font-weight: 400;
+}
+
+.caption .btn:hover {
+    background: #6E07F3;
+}
+
+.card:hover .overlay {
+    opacity: 0.8;
+}
+
+.card:hover .caption {
+    opacity: 1;
+}
+
+
+/* container4 */
+
+.container4 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* border: 2px solid black; */
+}
+
+.contact-img {
+    width: 15%;
+    /* border: 2px solid black; */
+}
+
+.contact-message {
+    margin: 20px 0 20px 0;
+    width: 40%;
+    /* border: 2px solid black; */
+}
+
+
+.container4 form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 600px;
+    margin: auto;
+}
+
+.container4 label {
+    display: block;
+    margin-bottom: 5px;
+    color: #333;
+}
+
+.container4 input, .container4 textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.container4 button {
+    display: block;
+    width: 100%;
+    padding: 10px 20px 10px 20px;
+    font-family: 'Montserrat', sans-serif;
+    background-image: linear-gradient(#11cdd4, #11999e);
+    color: #fff;
+    border: none;
+    text-decoration: none;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.container4 button:hover {
+    background-image: linear-gradient(#30e3cb, #2bc4ad);
+    color: #fff;
+}
+
+
+/* container5 */
+.container5 {
+    font-size: 1.2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 300px;
+    background-color: #66BFBF;
+    /* border: 2px solid black; */
+}
+
+.links {
+    display: flex;
+    justify-content: center;
+}
+
+.footer-link {
+    display: flex;
+    flex-direction: column;
+    color: black;
+}
+
+.copyright {
+    margin: 10px 0;
+    color: black;
+    font-size: 1rem;
+}
+
+.container5 p {
+    color: black;
+    font-size: 1rem;
+}
+
+
+
+
