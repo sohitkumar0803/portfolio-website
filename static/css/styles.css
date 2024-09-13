@@ -133,16 +133,16 @@ a:hover {
     width: 10%;
     position: absolute;
     z-index: -2;
-    right: 60px;
-    top: 155px;
+    right: 10%;
+    top: 30%;
 }
 
 .bottom-cloud {
     width: 10%;
     position: absolute;
     z-index: -2;
-    left: 70px;
-    top: 200px;
+    left: 10%;
+    top: 40%;
 }
 
 /* container2 */
@@ -412,8 +412,16 @@ a:hover {
         font-size: 1.2rem;
     }
 
-    .top-cloud, .bottom-cloud {
+    .top-cloud {
         width: 20%;
+        right: 5%;
+        top: 15%;
+    }
+
+    .bottom-cloud {
+        width: 20%;
+        left: 5%;
+        top: 20%;
     }
 
     .intro, .skill-row {
