@@ -133,16 +133,16 @@ a:hover {
     width: 10%;
     position: absolute;
     z-index: -2;
-    right: 20%;
-    top: 30%;
+    right: 60px;
+    top: 155px;
 }
 
 .bottom-cloud {
     width: 10%;
     position: absolute;
     z-index: -2;
-    left: 30%;
-    top: 40%;
+    left: 70px;
+    top: 200px;
 }
 
 /* container2 */
