@@ -132,17 +132,17 @@ a:hover {
 .top-cloud {
     width: 10%;
     position: absolute;
-    z-index: -2;
     right: 10%;
-    top: 30%;
+    top: 10%;
+    z-index: -1;
 }
 
 .bottom-cloud {
     width: 10%;
     position: absolute;
-    z-index: -2;
     left: 10%;
-    top: 40%;
+    bottom: 10%;
+    z-index: -1;
 }
 
 /* container2 */
@@ -421,7 +421,7 @@ a:hover {
     .bottom-cloud {
         width: 20%;
         left: 5%;
-        top: 6%;
+        top: 5%;
     }
 
     .intro, .skill-row {
